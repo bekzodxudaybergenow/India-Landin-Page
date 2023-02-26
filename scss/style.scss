@@ -10,6 +10,8 @@
     --CRAYOLAS-MAIZE: #F2C94C;
 }
 
+@import "./blog";
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -136,6 +138,11 @@ body {
     line-height: 29px;
     color: var(--WHITE);
     align-self: flex-start;
+}
+
+main {
+    background-color: var(--POLICE-BLUE);
+    padding: 127px 0 72px;
 }
 
 
