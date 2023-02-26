@@ -1,0 +1,25 @@
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 72px;
+}
+.about__content {
+    max-width: 733px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--WHITE);
+}
+.about__content__link {
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--CRAYOLAS-MAIZE);
+    transition: .3s;
+
+    &:hover {
+        color: #F2B74A;
+    }
+}
