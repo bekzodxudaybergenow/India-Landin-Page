@@ -1,0 +1,128 @@
+// HEADER SECTION
+
+.header {
+    background-image: url("../img/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 832px;
+    height: 100%;
+}
+
+.head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.head__col {
+    display: flex;
+    align-items: center;
+}
+
+.humburger__btn {
+    width: 30px;
+    height: 35px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: inherit;
+    margin-right: 47px;
+    position: relative;
+}
+
+.humburger__btn span {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--WHITE);
+    border-radius: 2px;
+    transition: .5s;
+}
+
+.humburger__btn span:nth-child(1) {
+    margin-top: -10px;
+}
+
+.humburger__btn span:nth-child(3) {
+    margin-top: 10px;
+}
+
+.menu__list {
+    display: flex;
+    column-gap: 40px;
+    list-style: none;
+}
+
+.menu__item__link {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--WHITE);
+
+    &:hover {
+        color: var(--ANTI-FLASH-WHITE);
+    }
+}
+.logo {
+    width: 82px;
+    height: 22px;
+}
+
+.head__logo {
+    margin-right: auto;
+    margin-left: 140px;
+}
+
+.head__signup {
+    width: 16px; 
+    height: 20px;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+// HERO SECTION
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 208px;
+}
+
+.hero__title {
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 240px;
+    color: var(--ANTI-FLASH-WHITE);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.hero__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 56px;
+    font-weight: 500;
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--WHITE);
+    border: 1px solid var(--ANTI-FLASH-WHITE);
+    margin-bottom: 123px;
+
+    &:hover {
+        color: var(--ANTI-FLASH-WHITE);
+        border-color: var(--WHITE);
+    }
+}
+.hero__descr {
+    max-width: 730px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--WHITE);
+    align-self: flex-start;
+}

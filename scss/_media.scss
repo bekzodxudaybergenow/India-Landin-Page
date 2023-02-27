@@ -1,0 +1,70 @@
+@media screen and (max-width: 991px) {
+    .header {
+        .head {
+            justify-content: space-between;
+            padding-top: 30px;
+    
+            .head__logo {
+                margin: 0;
+            }
+            .humburger__btn  {
+                margin-right: 0;
+                z-index: 2;
+            }
+
+            .menu {
+                display: none;
+                position: absolute;
+                background-color: var(--POLICE-BLUE);
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+
+            .menu__list {
+                display: block;
+                padding-top: 120px;
+                text-align: center;
+            }
+
+            .menu__item {
+                margin-bottom: 20px;
+            }
+
+            .menu__item__link {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .header.open {
+        position: fixed!important;
+    }
+
+    .header.open .menu {
+        display: block;
+        scroll-behavior: smooth;
+    }
+    
+    .header.open .humburger__btn span:nth-child(1) {
+        transform: translateY(10px) rotate(-45deg);
+    }
+    
+    .header.open .humburger__btn span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .header.open .humburger__btn span:nth-child(3) {
+        transform: translateY(-10px) rotate(45deg);
+    }
+
+    .blog__list {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .blog__list__items {
+            margin: 15px;
+        }
+    }
+}
